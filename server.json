@@ -5,6 +5,14 @@
   "description": "Test, validate and explain regular expressions with match highlighting. x402 micropayment.",
   "version": "1.0.0",
   "websiteUrl": "https://github.com/Br0ski777/regex-generator-x402",
-  "repository": { "url": "https://github.com/Br0ski777/regex-generator-x402", "source": "github" },
-  "remotes": [{ "type": "sse", "url": "https://PLACEHOLDER.up.railway.app/mcp" }]
+  "repository": {
+    "url": "https://github.com/Br0ski777/regex-generator-x402",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://regex-generator-production-0566.up.railway.app/mcp"
+    }
+  ]
 }
