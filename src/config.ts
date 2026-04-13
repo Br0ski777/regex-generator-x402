@@ -34,6 +34,55 @@ Do NOT use for text classification -- use text_classify_content instead. Do NOT 
         },
         required: ["pattern", "testStrings"],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "pattern": {
+              "type": "string",
+              "description": "Regex pattern tested"
+            },
+            "flags": {
+              "type": "string",
+              "description": "Regex flags used"
+            },
+            "explanation": {
+              "type": "string",
+              "description": "Human-readable explanation of the pattern"
+            },
+            "totalMatches": {
+              "type": "number",
+              "description": "Total matches across all inputs"
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "input": {
+                    "type": "string"
+                  },
+                  "matches": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "matchCount": {
+                    "type": "number"
+                  },
+                  "isMatch": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          },
+          "required": [
+            "pattern",
+            "totalMatches",
+            "results"
+          ]
+        },
     },
   ],
 };
