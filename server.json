@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "sse",
-      "url": "https://regex-generator-production-0566.up.railway.app/mcp"
+      "url": "https://regex-generator-x402-production.up.railway.app/mcp"
     }
   ]
 }
